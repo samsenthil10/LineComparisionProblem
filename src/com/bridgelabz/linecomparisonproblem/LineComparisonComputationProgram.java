@@ -28,8 +28,11 @@ public class LineComparisonComputationProgram {
 		if(lengthOfLine1.equals(lengthOfLine2)) {
 			System.out.println("Two Lines Are Equal");
 		}
-		else {
-			System.out.println("Two Lines Are Not Equal");
+		else if(lengthOfLine1.compareTo(lengthOfLine2) < 0) {
+			System.out.println("Line 1 is shorter than Line 2");
+		}
+		else if(lengthOfLine1.compareTo(lengthOfLine2) > 0) {
+			System.out.println("Line 1 is longer than Line 2");
 		}
 		System.out.println("------------------------------------------------------------------");
 	}
