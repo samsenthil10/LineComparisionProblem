@@ -1,8 +1,7 @@
 package com.bridgelabz.linecomparisonproblem;
 
-public interface LineComparisonIF {
+public interface LengthComparatorIF {
 	
-	public Double lengthOfLine(Point startPoint, Point endPoint);
-	public void checkEqualLines(Double lengthOfLine1, Double lengthOfLine2);
-	public void compareLines(Double lengthOfLine1, Double lengthOfLine2);
+	public void checkEqualLines(Line line1, Line line2);
+	public void compareLines(Line line1, Line line2);
 }
